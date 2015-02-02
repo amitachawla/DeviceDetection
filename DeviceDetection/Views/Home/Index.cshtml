@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h3>Device Detection</h3>
+
+@if (Request.Browser.IsMobileDevice)
+{
+    <h4>Mobile Display</h4>
+}
+else
+{
+  <h4>Desktop Monitor Display</h4>
+}
